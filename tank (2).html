@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <img class="h-screen object-cover mx-auto" src="tank.png" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="770,80,980,270" alt="Computer" href="sensors.html">
+        <label for="my-modal-1" class="btn"> <area shape="rect" coords="120,20,500,120"> </label>
+        <label for="my-modal-2" class="btn"> <area shape="rect" coords="120,220,360,330"> </label>
+      </map>
+</div>
+
+
+
+<input type="checkbox" id="my-modal-2" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-2" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <div class="flex flex-col">
+        <div class="form-control w-52">
+          <label class="cursor-pointer label">
+            <span class="label-text">  ON / OFF </span> 
+            <input type="checkbox" class="toggle toggle-primary" checked />
+          </label>
+        </div>
+  </div>
+</div>
+
+
+</body>
+</html>
